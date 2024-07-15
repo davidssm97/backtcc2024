@@ -3,7 +3,10 @@ package org.example.helpers.mensajes;
 public enum RegexExpresiones {
 
     VALIDAR_SOLO_LETRAS_Y_ESPACIOS("^[a-zA-Z\\s]*$"),
-    VALIDAR_SOLO_LETRAS_SIN_ESPACIOS("^[a-zA-Z]*$"); // Nueva expresión regular
+    VALIDAR_LETRAS_SIN_ESPACIOS("^[A-Za-z]{1,}$"),
+    VALIDAR_FECHA("^(0[1-9]|1[0-2])[-/](\\d{2})$")
+
+    ;
 
     private String expresionRegular;
 
@@ -14,6 +17,8 @@ public enum RegexExpresiones {
     public String getExpresionRegular() {
         return expresionRegular;
     }
+
+    public void setExpresionRegular(String expresionRegular) {
+        this.expresionRegular = expresionRegular;
+    }
 }
-//public void setExpresionRegular(String expresionRegular) {
-   // this.expresionRegular = expresionRegular;

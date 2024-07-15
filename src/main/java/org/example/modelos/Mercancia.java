@@ -4,28 +4,27 @@ import org.example.helpers.validaciones.MercanciaValidacion;
 
 public class Mercancia {
 
-    //id (int) //solo enteros positivos
-//volumenOcupado (double)  //solo positivos y maximo 100
-//tipo (string) //solo letras sin espacios
-//peso (double) //solo positivos maximo 1000
-//descripcion (string) //maximo 100
-//avaluo (int) //solo positivos
-//direccionRemitente (string) //maximo 200
-//direccionDestinatario (string) //maximo 200
-
-
     private MercanciaValidacion mercanciaValidacion = new MercanciaValidacion();
 
+    //id (int) //solo enteros positivos
     private Integer id;
+    //volumenOcupado (double)  //solo positivos y maximo 100
     private Double volumenOcupado;
+    //tipo (string) //solo letras sin espacios
     private String tipo;
+    //peso (double) //solo positivos maximo 1000
     private Double peso;
+    //descripcion (string) //maximo 100
     private String descripcion;
+    //avaluo (int) //solo positivos
     private Integer avaluo;
+    //direccionRemitente (string) //maximo 200
     private String direccionRemitente;
-    private String direccionDestinatario;
+    //direccionDestinatario (string) //maximo 200
+    private  String direccionDestinatario;
 
-    public Mercancia() {}
+    public Mercancia() {
+    }
 
     public Mercancia(Integer id, Double volumenOcupado, String tipo, Double peso, String descripcion, Integer avaluo, String direccionRemitente, String direccionDestinatario) {
         this.id = id;
@@ -43,11 +42,11 @@ public class Mercancia {
     }
 
     public void setId(Integer id) {
-        try {
-            mercanciaValidacion.validarId(id);
-            this.id = id;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarId(id);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -56,11 +55,11 @@ public class Mercancia {
     }
 
     public void setVolumenOcupado(Double volumenOcupado) {
-        try {
-            mercanciaValidacion.validarVolumenOcupado(volumenOcupado);
-            this.volumenOcupado = volumenOcupado;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarVolumenOcupado(volumenOcupado);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -69,11 +68,11 @@ public class Mercancia {
     }
 
     public void setTipo(String tipo) {
-        try {
-            mercanciaValidacion.validarTipo(tipo);
-            this.tipo = tipo;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarTipo(tipo);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -82,11 +81,11 @@ public class Mercancia {
     }
 
     public void setPeso(Double peso) {
-        try {
-            mercanciaValidacion.validarPeso(peso);
-            this.peso = peso;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarPeso(peso);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -95,11 +94,11 @@ public class Mercancia {
     }
 
     public void setDescripcion(String descripcion) {
-        try {
-            mercanciaValidacion.validarDescripcion(descripcion);
-            this.descripcion = descripcion;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarDescripcion(descripcion);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -108,11 +107,11 @@ public class Mercancia {
     }
 
     public void setAvaluo(Integer avaluo) {
-        try {
-            mercanciaValidacion.validarAvaluo(avaluo);
-            this.avaluo = avaluo;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarAvaluo(avaluo);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -121,11 +120,11 @@ public class Mercancia {
     }
 
     public void setDireccionRemitente(String direccionRemitente) {
-        try {
-            mercanciaValidacion.validarDireccionRemitente(direccionRemitente);
-            this.direccionRemitente = direccionRemitente;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarDireccionRemitente(direccionRemitente);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
 
@@ -134,11 +133,13 @@ public class Mercancia {
     }
 
     public void setDireccionDestinatario(String direccionDestinatario) {
-        try {
-            mercanciaValidacion.validarDireccionDestinatario(direccionDestinatario);
-            this.direccionDestinatario = direccionDestinatario;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(e.getMessage());
+        try{
+            this.mercanciaValidacion.validarDireccionDestinatario(direccionDestinatario);
+            System.out.println("era penal pa colombia :c");
+        }catch(Exception error){
+            System.out.println(error.getMessage());
         }
     }
+
+
 }

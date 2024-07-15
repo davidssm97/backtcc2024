@@ -11,11 +11,9 @@ public class RegexValidator {
         Matcher coincidencia=patron.matcher(cadena);
 
         if(!coincidencia.matches()){
-            //NO hubo coincidencia
             return false;
-        }else{
+        }else {
             return true;
         }
-
     }
 }
